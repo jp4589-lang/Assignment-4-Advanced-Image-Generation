@@ -31,6 +31,13 @@ docker run --rm -p 8000:8000 \
 # http://localhost:8000/docs
 ```
 
+## Pretrained Weights
+The repo includes pretrained CIFAR-10 checkpoints under `models/`:
+- `models/diffusion_cifar10.pt`
+- `models/ebm_cifar10.pt`
+
+The API auto-loads these at startup, so you can run Docker and immediately use the `/generate/*` endpoints—no training required. The training endpoints remain optional for experimentation.
+
 ## Local Dev
 ```bash
 python -m venv .venv
