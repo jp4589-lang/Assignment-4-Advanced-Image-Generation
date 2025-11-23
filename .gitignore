@@ -1,12 +1,26 @@
+############################################
+# Minimal ignore for assignment deployment #
+############################################
+
+# Python artifacts
 __pycache__/
 *.py[cod]
+.venv/
+env/
+venv/
+.env
+.env.*
+
+# Model / data artifacts (retrainable)
 *.pt
 *.pth
 *.ckpt
-.env
-.venv/
-outputs/
 models/
+outputs/
 dataset/
-# keep readme
+
+# OS noise
+.DS_Store
+
+# Keep README tracked
 !README.md
