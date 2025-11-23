@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.ckpt
+.env
+.venv/
+outputs/
+models/
+dataset/
+# keep readme
+!README.md
